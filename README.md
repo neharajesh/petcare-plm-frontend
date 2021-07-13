@@ -1,5 +1,5 @@
 # Personal Management Application
-Created using React + TypeScript
+Created using React
 
 Welcome to **PETCARE**! A Personal Management Application just for you.
 
