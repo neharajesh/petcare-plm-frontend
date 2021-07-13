@@ -6,12 +6,6 @@ const ArticleContext = createContext();
 export const ArticleProvider = ({ children }) => {
     const [ articles, setArticles ] = useState([]);
 
-    useEffect(async() => {
-        const response = await loadAllArticles();
-        console.log(response)
-        setArticles(response.articles)
-    }, [setArticles])
-
     return(<>
         <ArticleContext.Provider value={{ articles, setArticles }}>
             {children}
