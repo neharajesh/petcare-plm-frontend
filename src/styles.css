@@ -25,7 +25,9 @@
 .bdr-grey { border-color: grey; }
 button { cursor: pointer; }
 .txt-underline { text-decoration: underline; }
+.card-w-30 { width: 30rem; }
 .card-w-15 { width: 15rem; }
+.card-w-7 { width: 7rem; }
 .card-h-25 { height: 25rem; }
 .card-h-20 { height: 20rem; }
 .card-h-15 { height: 15rem; }
@@ -60,6 +62,7 @@ body {
     width: 23vw;
     background-color: var(--background-sidebar);
     padding: 1rem;
+    padding-top: 2rem;
     display: flex;
     flex-direction: column;
     align-items: center;

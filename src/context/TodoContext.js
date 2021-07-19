@@ -1,5 +1,4 @@
-import { createContext, useContext, useEffect, useState } from "react";
-import { fetchAllTodoLists } from "../api/TodoApi";
+import { createContext, useContext, useState } from "react";
 
 const initialTodoList = JSON.parse(localStorage.getItem("cart")) || [];
 

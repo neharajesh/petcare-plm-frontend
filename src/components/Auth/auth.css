@@ -19,6 +19,7 @@
     border: none;
     border-bottom: 1px solid var(--plm-grey);
     background-color: transparent;
+    color: inherit;
 }
 
 .authInput:focus {

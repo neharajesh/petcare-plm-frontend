@@ -1,6 +1,6 @@
 export const Home = () => {
     return (<>
-        <div className="pageContainer">
+        <div className="pageContainer mg-l-1">
             <h1> Home </h1>
             <h2 className="mg-t-1"> Welcome to PETCARE, your Personal Learning Management Application! </h2>
             <p className="mg-05 w-75 mg-b-1"> PETCARE is an application you can use to manage everything related to your pet. Manage all your todos, check out articles related to pet care and management, and more!  </p>

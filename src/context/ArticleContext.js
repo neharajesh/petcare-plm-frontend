@@ -1,5 +1,4 @@
-import { createContext, useContext, useEffect, useState } from "react"
-import { loadAllArticles } from "../api/ArticleAPI";
+import { createContext, useContext, useState } from "react"
 
 const ArticleContext = createContext();
 

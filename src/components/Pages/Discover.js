@@ -4,7 +4,7 @@ export const Discover = () => {
     const { articles } = useArticle();
 
     return (<>
-        <div className="pageContainer">
+        <div className="pageContainer mg-l-1">
             <h1> Discover </h1>
             <p className="mg-tb-1 txt-l w-75"> Worried if you're taking good care of your pet? Are you confused about your pet's behaviour or are you just curious to learn more? </p>
             <p className="mg-b-1 txt-l"> Discover articles and lists relating to your needs! </p>

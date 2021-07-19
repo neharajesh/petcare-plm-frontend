@@ -9,9 +9,14 @@ import { Todo } from "./components/Pages/Todo";
 import { TodoListDetails } from "./components/Pages/TodoListDetails";
 import { CreateTodo } from "./components/Pages/CreateTodo";
 import { useTheme } from "./context/ThemeContext";
+import { useEffect } from "react";
+import { fetchCurrentUserTodos } from "./api/TodoApi";
+import { useTodo } from "./context/TodoContext";
+import { useAuth } from "./context/AuthContext";
 
 const App = () => {
     const { theme } = useTheme();
+
 	return (<div className={theme === "dark" && "darkTheme"}>
 		<Routes>
 			<Route path="/signin"><Layout> <Login /> </Layout></Route>

@@ -59,3 +59,13 @@ export const updateCurrentTodoList = async(todoId, updatedTodo) => {
         console.log("Error updating todolist")
     }
 }
+
+export const fetchCurrentUserTodos = async(userId) => {
+    try {
+        const response = await axios.get(`${ROOT_URL}/todo/user/${userId}`)
+        console.log(response.data.todos)
+        return response.data.todos
+    } catch (err) {
+        console.log("Error occurred fetching user's todo lists", err.message)
+    }
+}

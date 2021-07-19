@@ -3,24 +3,27 @@ import { useState } from "react";
 import { loginRequest } from "../../api/AuthAPI"
 import { showNotification } from "../Utilities/toast"
 import { useAuth } from "../../context/AuthContext";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 export const Login = () => {
     const [username, setUsername] = useState("")
     const [password, setPassword] = useState("")
     const { setUser, setToken } = useAuth()
+    const navigate = useNavigate()
 
     const submitButtonHandler = async () => {
-        const { message, user, authToken } = await loginRequest(username, password);
+        const { success, message, user, authToken } = await loginRequest(username, password);
+        console.log(user)
         localStorage.setItem("user", JSON.stringify(user))
         localStorage.setItem("token", JSON.stringify(authToken))
         setUser(user)
         setToken(authToken)
         showNotification(message)
+        success && navigate("/todo")
     }
     
     return(<>
-        <div className="pageContainer">
+        <div className="pageContainer mg-l-1">
             <h1> Login </h1>
             <div className="authContainer pd-1 mg-tb-2">
                 <div className="inputContainer"> 
