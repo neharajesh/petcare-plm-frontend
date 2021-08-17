@@ -1,0 +1,184 @@
+@import url("https://purplecss.netlify.app/styles.css");
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scrollbar-width: none;
+}
+
+::-webkit-scrollbar {
+    width: 0;
+}
+
+:root {
+    --background-dark: #212121;
+    --background-sidebar: #f4f1de;
+    --plm-pink: rgb(228, 135, 135);
+    --plm-grey: rgb(65, 64, 64);
+}
+
+/* Utilities */
+.txt-strike { text-decoration: line-through; }
+.txt-grey { color: grey; }
+.bdr-grey { border-color: grey; }
+button { cursor: pointer; }
+.txt-underline { text-decoration: underline; }
+.card-w-30 { width: 30rem; }
+.card-w-15 { width: 15rem; }
+.card-w-7 { width: 7rem; }
+.card-h-25 { height: 25rem; }
+.card-h-20 { height: 20rem; }
+.card-h-15 { height: 15rem; }
+.card-h-10 { height: 10rem; }
+.txt-inherit { color: inherit; }
+
+.badge-tl {
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+    padding-top: 0.1rem;
+    padding-bottom: 0.1rem;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    overflow: hidden;
+}
+
+.darkTheme { 
+    background-color: var(--background-dark);
+    color: white;
+}
+
+.pageLayout {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+}
+
+.sidebarContainer {
+    height: 100vh;
+    width: 23vw;
+    background-color: var(--background-sidebar);
+    padding: 1rem;
+    padding-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.pageContainer {
+    padding: 1rem;
+    width: 100%;
+    height: 100vh;
+    overflow-y: scroll;
+}
+
+.header-brand {
+    width: 100%;
+    font-size: 2rem; 
+    font-weight: bolder;
+    text-decoration: none;
+    color: black;
+    text-align: center;
+}
+
+.header-brand:hover {
+    background-color: pink;
+    background-image: linear-gradient(
+        45deg,
+        #CA4246 16.666%, 
+        #E16541 16.666%, 
+        #E16541 33.333%, 
+        #F18F43 33.333%, 
+        #F18F43 50%, 
+        #8B9862 50%, 
+        #8B9862 66.666%, 
+        #476098 66.666%, 
+        #476098 83.333%, 
+        #A7489B 83.333%);
+    background-size: 100%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+}
+
+.navLink {
+    color: black;
+    text-decoration: none;    
+    display: flex;
+    justify-content: center;
+}
+
+.navLink:hover {
+    background-color: pink;
+    background-image: linear-gradient(
+        45deg,
+        #CA4246 16.666%, 
+        #E16541 16.666%, 
+        #E16541 33.333%, 
+        #F18F43 33.333%, 
+        #F18F43 50%, 
+        #8B9862 50%, 
+        #8B9862 66.666%, 
+        #476098 66.666%, 
+        #476098 83.333%, 
+        #A7489B 83.333%);
+    background-size: 100%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+}
+
+.navLink span {
+    font-size: 1.2em;
+    text-decoration: none;
+}
+
+.fixedThemeButton {
+    padding: 0.5rem;
+    border: none;
+    background-color: transparent;
+}
+
+/* DISCOVER */
+.articleImage {
+    width: 100%;
+}
+
+.readButton {
+    position: absolute;
+    bottom: 0;
+    left: 10;
+    text-decoration: none;
+    border: none;
+    border-radius: 3px;
+    background-color: var(--plm-pink);
+    padding: 0.4rem;
+    width: 4rem;
+    text-align: center;
+    font-size: 0.9em;
+}
+
+.readButton:hover {
+    color: black;
+}
+
+/* TODO */
+.todoInput {
+    width: 30rem;
+    padding: 1rem 1.5rem;
+    border: none;
+    border-bottom: 0.05px solid var(--plm-grey);
+    background-color: transparent;
+    color: inherit;
+}
+
+.todoInput:focus {
+    border-bottom: 2px solid var(--plm-pink);
+}
